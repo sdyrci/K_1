@@ -1,0 +1,12 @@
+R/
+├── include/                  # Başlık (.h) Dosyaları — (Modül Arayüzleri)
+│   ├── event_logger.h        # Renkli ve zaman damgalı loglama prototipleri
+│   ├── system_telemetry.h    # Sistem bellek verisi toplama prototipleri ve yapıları
+│   └── system_monitor.h      # Eşik kontrolü ve izleme döngüsü prototipleri
+├── src/                      # Kaynak (.c) Dosyaları — (İş Mantığı ve Uygulama)
+│   ├── logger.c              # Loglama mekanizmasının uygulaması
+│   ├── telemetry.c           # Windows / Linux bellek okuma mantığı
+│   ├── monitor.c             # Periyodik eşik analizi ve karar mekanizması
+│   └── main.c                # Uygulama giriş noktası (Orchestrator)
+├── run.bat                   # Hızlı derleme ve çalıştırma betiği
+└── zaps_app.exe              # Derlenmiş ikili dosya (Binary Output)
